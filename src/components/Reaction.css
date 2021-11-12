@@ -1,0 +1,100 @@
+/* .container.emotion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #E5E5E5;
+  }
+   */
+.MuiPopover-paper {
+  outline: 0;
+  position: absolute;
+  max-width: calc(100% - 32px);
+  min-width: 16px;
+  max-height: calc(100% - 32px);
+  min-height: 16px;
+  overflow-x: unset !important;
+  overflow-y: unset !important;
+  border-radius: 25px !important;
+  margin-bottom: 2;
+}
+
+svg {
+  font-size: 60px;
+}
+
+span.love:hover {
+  transform: translate(0, -15px) scale(1.5);
+  /* transform: scale(1.5);  */
+}
+span.like:hover {
+  transform: translate(0, -15px) scale(1.5);
+  /* transform: scale(1.5);  */
+}
+span.celebrate:hover {
+  transform: translate(0, -15px) scale(1.5);
+  /* transform: scale(1.5);  */
+}
+
+span.love {
+  color: rgb(243, 73, 73);
+  position: relative;
+  bottom: -7px;
+  transition: 0.5s;
+  font-size: 35px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+  /* transition: 'transform 0.5s'; */
+}
+
+span.celebrate {
+  margin-right: 0px;
+  position: relative;
+  bottom: -3px;
+  font-size: 35px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+}
+
+span.like {
+  font-size: 35px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+}
+
+.addReactions {
+  border-radius: 50%;
+}
+
+.MuiPaper-root {
+  margin-top: -20px !important;
+}
+
+svg {
+  color: black !important;
+}
+
+button.MuiButtonBase-root.MuiIconButton-root {
+  border: 2px solid #beb4b4;
+  border-radius: 50%;
+  background-color: #edeef0 !important;
+}
+
+.active {
+  background-color: #edf5ff !important;
+}
+
+.MuiChip-label {
+  color: black !important;
+}
+
+.inactive {
+  background-color: #f4f4f4 !important;
+}
