@@ -1,0 +1,45 @@
+.MuiPaper-root
+  .MuiPaper-elevation
+  .MuiPaper-elevation4
+  .MuiAppBar-root
+  .MuiAppBar-colorPrimary {
+  background-color: azure !important;
+}
+
+.Tab {
+  height: 300px;
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 0px !important;
+}
+
+.MuiBox-root.css-0 {
+  margin: 0px auto !important;
+  text-align: left !important;
+  width: 500px !important;
+}
+
+.css-1su9lvs-MuiPaper-root-MuiAppBar-root {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.css-1vw5i9y-MuiButtonBase-root-MuiTab-root {
+  color: black !important;
+  opacity: 1 !important;
+  font-family: cursive !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #2432ba !important;
+}
+
+.heading {
+  color: black;
+  font-family: IBM Plex Sans;
+  margin: 10px;
+  font-style: 'SemiBold';
+}
+
+.MuiBox-root{
+  padding: 0px !important;
+}

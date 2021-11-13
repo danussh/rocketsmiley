@@ -1,11 +1,11 @@
 import React from "react";
 import Reaction from "../src/components/Reaction";
-import "./App.css"
+import "./App.css";
+import Trigger from "./components/Trigger";
 
 const App = () => {
   return (
-    <div className="app">
-      <h1>  </h1>
+    <div className="app main">
       <Reaction />
     </div>
   );

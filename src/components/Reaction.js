@@ -9,6 +9,7 @@ import Tooltip from "@mui/material/Tooltip";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import IconButton from "@mui/material/IconButton";
 import "./Reaction.css";
+import Trigger from "./Trigger";
 
 const useStyles = makeStyles((theme) => ({
   typography: {
@@ -23,6 +24,7 @@ function Reaction() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [chipData, setChipData] = React.useState([]);
   const [active, setActive] = React.useState("");
+  const [tabs,setTabs]=React.useState(0)
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -38,7 +40,6 @@ function Reaction() {
         const filter = chipData.filter((val, index) => {
           return val.key !== e.target.className;
         });
-        // setActiveIndex(1)
         setChipData(filter);
       } else {
         setChipData((prevState) => [
@@ -108,7 +109,7 @@ function Reaction() {
 
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
-
+console.log(tabs)
   return (
     <>
       <Popover
@@ -128,7 +129,7 @@ function Reaction() {
       >
         <Typography className={classes.typography}>
           <div className="icons">
-            <Tooltip title="Like" placement="top">
+            <Tooltip title="Like" placement="top" onMouseEnter={()=>{setTabs(1)}}>
               <span
                 role="img"
                 aria-label="a"
@@ -139,7 +140,7 @@ function Reaction() {
                 {String.fromCodePoint("0x1f44d")}
               </span>
             </Tooltip>
-            <Tooltip title="Love" placement="top">
+            <Tooltip title="Love" placement="top" onMouseEnter={()=>{setTabs(2)}}>
               <span
                 role="img"
                 aria-label="a"
@@ -149,7 +150,7 @@ function Reaction() {
                 {String.fromCodePoint("0x2764")}
               </span>
             </Tooltip>
-            <Tooltip title="Celebrate" placement="top">
+            <Tooltip title="Celebrate" placement="top" onMouseEnter={()=>{setTabs(3)}}>
               <span
                 role="img"
                 aria-label="a"
@@ -185,6 +186,7 @@ function Reaction() {
           />
         </IconButton>
       </div>
+      <Trigger tabs={tabs} />
     </>
   );
 }
